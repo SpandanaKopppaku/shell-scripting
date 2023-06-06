@@ -24,7 +24,9 @@ echo value of variable a is $a
 echo Value of the varibale is ${a}
 echo "Value of tha variable is ${a}"
 
-echo "Value of the varibale d id ${d}"
+echo "Value of the varibale d is ${d}"
+
+# if you try to print a value that is not declared, bash will consider that as a null instesd of error
 
 # "Dobule quotes"
 # 'Single quotes'
