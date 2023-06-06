@@ -9,6 +9,7 @@ Each and every repository will have a README.md file to describe what the reposi
 ### Common Git commands:
 
 ...
+
 $ git clone repoURL.git
 
 $ git add filename or git add .
@@ -18,6 +19,7 @@ $ git commit -m "Breif message of your comments"
 $ git push
 
 $ git pull
+
 ...
 
 ### How to authenticate from your local to GitHub ?
