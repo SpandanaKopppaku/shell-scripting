@@ -28,5 +28,8 @@ echo "Value of the varibale d is ${d}"
 
 # if you try to print a value that is not declared, bash will consider that as a null instesd of error
 
+# rm -rf /data/${floder_to-delete}/ => rm -rf /data
+
+
 # "Dobule quotes"
 # 'Single quotes'
