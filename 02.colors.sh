@@ -19,3 +19,6 @@
  echo -e "\e[31m I am printing Red color \e[0m"
  echo -e "\e[34m I am printing Green color \e[0m"
  echo -e "\e[33m I am peinting yellow coloe \e[0m"
+
+ # Printing Background Color 
+echo -e "\e[44;32m I am printing Green Color with Yello Background \e[0m"
