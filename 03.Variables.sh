@@ -20,9 +20,9 @@ c=40
 # Syantx : $varibalename : $ is going to print the value of the variable
 
 echo $a
-echo value of variable a is $a
-echo Value of the varibale is ${a}
-echo "Value of tha variable is ${a}"
+echo -e "value of variable a is \e[33m $a \e[0m" 
+echo -e "Value of the varibale is \e[33m ${a} \e[0m"
+echo -e "Value of tha variable is \e[33m ${a}\e[0m"
 
 echo "Value of the varibale d is ${d}"
 
