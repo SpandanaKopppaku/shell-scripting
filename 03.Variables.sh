@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# what is a variable? variable is used to store and pass the values
+# a=30
+# name=Spandana
+# topic=shellScripting
+
+# In bash there is no concept of Data types ; By default everything is a string
+# int a = 20
+# float b = 1.5
+# String c = spandana
+
+
+# This is how we can declare variables in bash
+
+a=20
+b=30
+c=40
+
+# Syantx : $varibalename : $ is going to print the value of the variable
+
+echo $a
+echo value of variable a is $a
+echo Value of the varibale is ${a}
+echo "Value of tha variable is ${a}"
+
+echo "Value of the varibale d id ${d}"
+
+# "Dobule quotes"
+# 'Single quotes'
