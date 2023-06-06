@@ -13,7 +13,7 @@ $ git add fileName  or   git add .              ; git will start tracking all th
 $ git commit -m "Brief message of your changes" ; commit means, you're telling git to COMMIT/SAVE it ; you can only push the changes that are commited.
 $ git push                                      ; pushes the changes that you've made to gitHub 
 $ git pull                                      ; be in the folder repository, this will pull all the changes
-.....
+...
 
 ### How to authenticate from your local to GitHub ?
 1) Github authentication works based on PAT. ( Personal Acccess Token )
