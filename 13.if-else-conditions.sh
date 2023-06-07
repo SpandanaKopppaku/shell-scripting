@@ -78,6 +78,8 @@ if [ "$ACTION" == "start" ] ; then
         exit 3
     else
 
-    echo " 1 "
+        echo -e "\e[35m Available option are start --- stop --- restart  --- enable only \e[0m"
+        echo -e "\e[33m expected usage :  \n  \t bash $0  start \e[0m "
+        exit 4
 
 fi
