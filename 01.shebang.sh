@@ -13,6 +13,7 @@ echo welocme to Cloud devops
 echo Line1
 echo Line2
 echo Line3
+echo Line4
 
 #### How to run a linux bash script ? 
 

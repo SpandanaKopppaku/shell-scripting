@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-# There are 4 types of command available : 
+# There are 4 types of command available :
 
 
 # 1) Binary                   ( /bin  , /sbin )
