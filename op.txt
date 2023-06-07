@@ -1,0 +1,11 @@
+total 31
+-rw-r--r-- 1 Admin 197121 1064 Jun  5 23:37 README.md
+-rwxr-xr-x 1 Admin 197121  614 Jun  6 23:37 01.shebang.sh*
+-rwxr-xr-x 1 Admin 197121  401 Jun  6 23:37 07.Commands.sh*
+-rwxr-xr-x 1 Admin 197121  851 Jun  6 23:39 02.colors.sh*
+-rwxr-xr-x 1 Admin 197121  825 Jun  6 23:39 03.Variables.sh*
+-rwxr-xr-x 1 Admin 197121  337 Jun  6 23:39 04.DynamicVars.sh*
+-rwxr-xr-x 1 Admin 197121  886 Jun  6 23:39 05.SpecialVaribale.sh*
+-rwxr-xr-x 1 Admin 197121   98 Jun  6 23:39 06.read.sh*
+-rwxr-xr-x 1 Admin 197121  863 Jun  6 23:39 08.Functions.sh*
+-rw-r--r-- 1 Admin 197121    0 Jun  7 00:06 op.txt
