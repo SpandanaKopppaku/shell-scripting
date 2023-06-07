@@ -11,6 +11,7 @@ ACTIOn=$1                                               # The value of action ta
 
 case $ACTION in                                                   # The value of action will be taken from the command line as first argument.
     start) 
+    
         echo -e "\e[32m Starting RabbitMQ Service \e[0m"
         exit 0
         ;;
