@@ -1,6 +1,7 @@
 #!/bin/bash
 
-a=10
+
+# a=10
 
 # if  [ -z "$a" ] ; then 
 #     echo "Value of a is declared"
