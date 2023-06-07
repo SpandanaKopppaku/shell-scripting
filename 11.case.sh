@@ -7,11 +7,10 @@
 #      opt2) command2 ;;
 
 # esac
-ACTIOn=$1                                               # The value of action taken from the commandline as a first argument
+ACTION=$1
 
 case $ACTION in                                                   # The value of action will be taken from the command line as first argument.
     start) 
-    
         echo -e "\e[32m Starting RabbitMQ Service \e[0m"
         exit 0
         ;;
@@ -29,6 +28,8 @@ case $ACTION in                                                   # The value of
         ;;
 
 esac 
+
+
 
 
 # exit : exit command helps us to take the script executing out of the script
