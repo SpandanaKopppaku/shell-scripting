@@ -19,12 +19,12 @@ c=40
 
 # Syantx : $varibalename : $ is going to print the value of the variable
 
-echo $a
-echo -e "value of the variable a is \e[33m $a \e[0m" 
-echo -e "Value of the varibale b is \e[33m ${b} \e[0m"
-echo -e "Value of tha variable c is \e[33m ${c}\e[0m"
+    echo $a
+    echo -e "value of the variable a is \e[33m $a \e[0m" 
+    echo -e "Value of the varibale b is \e[33m ${b} \e[0m"
+    echo -e "Value of tha variable c is \e[33m ${c}\e[0m"
 
-echo "Value of the varibale d is ${d}"
+    echo "Value of the varibale d is ${d}"
 
 # if you try to print a value that is not declared, bash will consider that as a null instesd of error
 
