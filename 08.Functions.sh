@@ -20,7 +20,7 @@ Status
 Status() {
    
     echo -e "Good morning and todays date is \e[34m $(date +%F) \e[0m"
-    echo -e "No Of Sessions that are active : \e[34m $(who | we -l) \e[0m"
+    echo -e "No Of Sessions that are active : \e[34m $(who | wc -l) \e[0m"
 }
 
 Sample
