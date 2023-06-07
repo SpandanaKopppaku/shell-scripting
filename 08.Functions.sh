@@ -13,6 +13,8 @@ Sample() {
     echo "I am executing the sample function"
     echo "sample function is completed"
 
+Status
+
 }
 
 Status() {
@@ -25,6 +27,6 @@ Sample
 
 # calling the Sample function
 
-Status
+
 
 # Calling the status function
