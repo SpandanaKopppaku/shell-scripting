@@ -78,4 +78,6 @@ if [ "$ACTION" == "start" ] ; then
         exit 3
     else
 
+    echo " 1 "
+
 fi
