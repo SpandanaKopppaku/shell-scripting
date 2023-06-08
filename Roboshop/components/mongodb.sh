@@ -31,13 +31,13 @@ stat $?
 
 echo -n "Extracting the $COMPONENT Schema:"
 cd /tmp
-unzip -o ${COMPONENT}.zip   &>> $LOGFILE
+unzip -o ${COMPONENT}.zip   
 stat $?
 
 echo -n "Injecting the schema:"
 cd ${COMPONENT}-main    
-mongo < catalogue.js        &>> $LOGFILE
-mongo < users.js            &>> $LOGFILE
+mongo < catalogue.js        
+mongo < users.js            
 stat $?
 
 echo -e "*********** \e[35m $COMPONENT Installation is completed \e[0m ***********"
