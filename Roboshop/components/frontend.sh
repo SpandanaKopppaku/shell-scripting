@@ -45,7 +45,7 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 stat $?
 
 echo -n "Starting $COMPONENT service: "
-Systemctl daemon-reload         &>> $LOGFILE
+systemctl daemon-reload         &>> $LOGFILE
 systemctl enable nginx          &>> $LOGFILE
 systemctl start nginx           &>> $LOGFILE
 stat $?
