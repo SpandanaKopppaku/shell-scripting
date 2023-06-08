@@ -4,6 +4,13 @@ COMPONENT=frontend
 
 echo -e "*********** \e[35m $COMPONENT Installation has started \e[0m ***********"
 
+if [$ID -ne 0] ; then
+
+    echo -e "\e[31m This script is expected to be run by a root user or with a sudo privilege \e[0m"
+    exit 1
+
+fi
+
 echo -n " Installing Nginx: "
 
 yum install nginx -y
