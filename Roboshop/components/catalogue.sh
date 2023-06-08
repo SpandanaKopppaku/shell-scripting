@@ -11,10 +11,18 @@ curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -    
 stat $?
 
 echo -n "Installing NodeJS :"
-yum install nodejs -y
+yum install nodejs -y       &>> $LOGFILE
 stat $?
 
-echo -n "Creating the Service Account :
-useradd roboshop
+id = roboshop
+if [ $? -ne 0 ] ; then
+
+    echo -n "Creating the Service Account :"
+    useradd roboshop    &>> $LOGFILE
+    stat $?
+
+fi
+
+
 
 
