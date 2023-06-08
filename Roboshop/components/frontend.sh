@@ -2,8 +2,9 @@
 
 COMPONENT=frontend
 
-echo -n " Installing Nginx: "  &>> $LOGFILE
+source components/common.sh
 
+echo -n " Installing Nginx: "  &>> $LOGFILE
 yum install nginx -y
 stat $?
 
