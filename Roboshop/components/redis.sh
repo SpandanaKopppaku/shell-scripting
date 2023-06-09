@@ -15,3 +15,10 @@ stat $?
 echo -n "Enabling the DB visibility :"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis/redis.conf   
 stat $? 
+
+echo -n "Starting $COMPONENT service: "
+systemctl daemon-reload         &>> $LOGFILE
+systemctl enable $COMPONENT          &>> $LOGFILE
+systemctl start $COMPONENT          &>> $LOGFILE
+stat $?
+
