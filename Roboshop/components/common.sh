@@ -62,3 +62,16 @@ NPM_INSTALL()
     stat $? 
 
 }
+
+CONFIGURE_SVC() 
+{
+
+    echo -n "Starting ${COMPONENT} service :"
+    systemctl daemon-reload   &>> $LOGFILE
+    systemctl enable $COMPONENT  &>> $LOGFILE
+    systemctl restart $COMPONENT &>> $LOGFILE
+    stat $? 
+
+    echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
+
+}
