@@ -41,7 +41,16 @@ cd /home/roboshop/catalogue     &>> $LOGFILE
 npm install                     &>> $LOGFILE
 stat $?
 
+echo -n "Updating the $COMPONENT systemd file :"
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' 
+mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
+stat $?
 
+echo -n "Starting $COMPONENT service: "
+systemctl daemon-reload         &>> $LOGFILE
+systemctl enable nginx          &>> $LOGFILE
+systemctl start nginx           &>> $LOGFILE
+stat $?
 
 
 
