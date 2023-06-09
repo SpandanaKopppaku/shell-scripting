@@ -43,7 +43,7 @@ npm install                     &>> $LOGFILE
 stat $?
 
 echo -n "Updating the $COMPONENT systemd file :"
-sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' 
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/${APPUSER}/${COMPONENT}/systemd.service
 mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $?
 
@@ -53,6 +53,7 @@ systemctl enable $COMPONENT          &>> $LOGFILE
 systemctl start $COMPONENT          &>> $LOGFILE
 systemctl status $COMPONENT -l
 stat $?
+
 
 
 
