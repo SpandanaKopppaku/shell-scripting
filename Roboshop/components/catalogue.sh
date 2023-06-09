@@ -1,6 +1,7 @@
 #!/bin/bash
 
 COMPONENT=catalogue
+APPUSER="roboshop"
 
 source components/common.sh
 
@@ -14,7 +15,7 @@ echo -n "Installing NodeJS :"
 yum install nodejs -y       &>> $LOGFILE
 stat $?
 
-id = roboshop
+id $APPUSER
 if [ $? -ne 0 ] ; then
 
     echo -n "Creating the Service Account :"
@@ -22,6 +23,10 @@ if [ $? -ne 0 ] ; then
     stat $?
 
 fi
+
+echo -n "Downloading the $COMPONENT component :
+
+
 
 
 

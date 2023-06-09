@@ -20,3 +20,4 @@ stat() {
         exit 2
     fi 
 }
+
