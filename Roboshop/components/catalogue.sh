@@ -2,7 +2,6 @@
 
 COMPONENT=catalogue
 
-
 source components/common.sh
 
 echo -e "*********** \e[35m $COMPONENT Installation has started \e[0m ***********"
@@ -16,7 +15,7 @@ yum install nodejs -y       &>> $LOGFILE
 stat $?
 
 
-
+echo -n "Switching the User from root to roboshop
 chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT/
 
 echo -n "Downloading the $COMPONENT component :"
