@@ -24,6 +24,6 @@ sed -i -e 's/MONGO_ENDPOINT/mongodb.roboshop.internal/' 's/REDIS_ENDPOINT/redis.
 mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $?
 
-START_SVC
+START_SERVICE
 
-
+echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"

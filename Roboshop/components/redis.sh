@@ -19,6 +19,6 @@ ed -i -e 's/127.0.0.1/0.0.0.0/' /etc/$COMPONENT.conf    &>> $LOGFILE
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/$COMPONENT/$COMPONENT.conf   &>> $LOGFILE
 stat $? 
 
-START_SVC
+START_SERVICE
 
 echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
