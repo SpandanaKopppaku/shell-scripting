@@ -32,7 +32,8 @@ stat $?
 
 echo -n "Copying the $COMPONENT to $APPUSER home directory :"
 cd /home/roboshop   &>> $LOGFILE
-unzip /tmp/catalogue.zip        &>> $LOGFILE
+rm -rf $COMPONENT &>> $LOGFIL
+unzip -o /tmp/catalogue.zip        &>> $LOGFILE
 mv catalogue-main catalogue     &>> $LOGFILE
 stat $?
 
