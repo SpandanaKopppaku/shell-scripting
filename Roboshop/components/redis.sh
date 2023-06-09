@@ -19,10 +19,6 @@ ed -i -e 's/127.0.0.1/0.0.0.0/' /etc/$COMPONENT.conf    &>> $LOGFILE
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/$COMPONENT/$COMPONENT.conf   &>> $LOGFILE
 stat $? 
 
-echo -n "Starting $COMPONENT service: "
-systemctl daemon-reload             &>> $LOGFILE
-systemctl enable $COMPONENT         &>> $LOGFILE
-systemctl start $COMPONENT          &>> $LOGFILE
-stat $?
+START_SVC
 
 echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"

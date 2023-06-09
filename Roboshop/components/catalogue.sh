@@ -24,17 +24,8 @@ sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/${APPUSER}/${COMPON
 mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $?
 
-echo -n "Starting $COMPONENT service: "
-systemctl daemon-reload         &>> $LOGFILE
-systemctl enable $COMPONENT          &>> $LOGFILE
-systemctl start $COMPONENT          &>> $LOGFILE
-systemctl status $COMPONENT -l
-stat $?
+START_SERVICE
+
 
 echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
-
-
-
-
-
 

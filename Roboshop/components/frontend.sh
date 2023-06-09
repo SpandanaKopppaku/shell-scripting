@@ -32,15 +32,7 @@ sed -i -e "/catalogue/s/localhost/catalogue.roboshop.internal/" /etc/${COMPONENT
 stat $?
 
 
-echo -n "Starting $COMPONENT service: "
-systemctl daemon-reload         &>> $LOGFILE
-systemctl enable $COMPONENT          &>> $LOGFILE
-systemctl start $COMPONENT          &>> $LOGFILE
-stat $?
-
-
+START_SERVICE
 
 echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
-
-
 

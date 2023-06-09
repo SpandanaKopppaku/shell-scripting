@@ -63,7 +63,7 @@ NPM_INSTALL()
 
 }
 
-CONFIGURE_SVC() 
+START_SERVICE() 
 {
 
     echo -n "Starting ${COMPONENT} service :"
@@ -71,7 +71,4 @@ CONFIGURE_SVC()
     systemctl enable $COMPONENT  &>> $LOGFILE
     systemctl restart $COMPONENT &>> $LOGFILE
     stat $? 
-
-    echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
-
 }
