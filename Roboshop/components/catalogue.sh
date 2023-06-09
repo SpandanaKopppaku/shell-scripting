@@ -36,10 +36,11 @@ unzip /tmp/catalogue.zip        &>> $LOGFILE
 mv catalogue-main catalogue     &>> $LOGFILE
 stat $?
 
-
+echo -n "Generating npm $COMPONENT artifacts :"
 cd /home/roboshop/catalogue     &>> $LOGFILE
 npm install                     &>> $LOGFILE
 stat $?
+
 
 
 
