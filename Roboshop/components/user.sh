@@ -17,7 +17,4 @@ CREATE_USER
 
 DOWNLOAD_AND_EXTRACT
 
-echo -n "Generating npm $COMPONENT artifacts :"
-cd /home/roboshop/$COMPONENT     &>> $LOGFILE
-npm install                         &>> $LOGFILE
-stat $?
+NPM_INSTALL

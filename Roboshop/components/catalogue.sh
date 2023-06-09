@@ -17,10 +17,7 @@ stat $?
 
 DOWNLOAD_AND_EXTRACT
 
-echo -n "Generating npm $COMPONENT artifacts :"
-cd /home/roboshop/catalogue     &>> $LOGFILE
-npm install                         &>> $LOGFILE
-stat $?
+NPM_INSTALL
 
 echo -n "Updating the $COMPONENT systemd file :"
 sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/${APPUSER}/${COMPONENT}/systemd.service
