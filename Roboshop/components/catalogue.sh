@@ -24,13 +24,19 @@ if [ $? -ne 0 ] ; then
 
 fi
 
+chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT/
+
 echo -n "Downloading the $COMPONENT component :"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/stans-robot-project/catalogue/archive/main.zip"   &>> $LOGFILE
-cd /home/roboshop
+stat $?
 
+echo -n "Copying the $COMPONENT to $APPUSER home directory :"
 cd /home/roboshop   &>> $LOGFILE
 unzip /tmp/catalogue.zip        &>> $LOGFILE
 mv catalogue-main catalogue     &>> $LOGFILE
+stat $?
+
+
 cd /home/roboshop/catalogue     &>> $LOGFILE
 npm install                     &>> $LOGFILE
 
