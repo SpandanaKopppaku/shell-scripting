@@ -52,3 +52,13 @@ DOWNLOAD_AND_EXTRACT() {
     stat $?
 
 }
+
+NPM_INSTALL()
+{
+
+    echo -n "Generating npm $COMPONENT artifacts :"
+    cd /home/roboshop/catalogue     &>> $LOGFILE
+    npm install                         &>> $LOGFILE
+    stat $? 
+
+}
