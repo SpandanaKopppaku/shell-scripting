@@ -39,7 +39,7 @@ stat $?
 
 echo -n "Generating npm $COMPONENT artifacts :"
 cd /home/roboshop/catalogue     &>> $LOGFILE
-npm install                     &>> $LOGFILE
+npm install                         &>> $LOGFILE
 stat $?
 
 echo -n "Updating the $COMPONENT systemd file :"
