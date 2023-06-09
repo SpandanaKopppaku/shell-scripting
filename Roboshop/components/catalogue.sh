@@ -39,6 +39,8 @@ stat $?
 
 cd /home/roboshop/catalogue     &>> $LOGFILE
 npm install                     &>> $LOGFILE
+stat $?
+
 
 
 
