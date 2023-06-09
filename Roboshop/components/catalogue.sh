@@ -15,7 +15,7 @@ yum install nodejs -y       &>> $LOGFILE
 stat $?
 
 
-echo -n "Switching the User from root to roboshop
+echo -n "Switching the User from root to roboshop"
 chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT/
 
 echo -n "Downloading the $COMPONENT component :"
