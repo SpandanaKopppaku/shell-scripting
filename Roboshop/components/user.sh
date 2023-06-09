@@ -28,3 +28,8 @@ rm -rf $COMPONENT   &>> $LOGFILE
 unzip -o /tmp/$COMPONENT.zip        &>> $LOGFILE
 mv $COMPONENT-main $COMPONENT    &>> $LOGFILE
 stat $?
+
+echo -n "Generating npm $COMPONENT artifacts :"
+cd /home/roboshop/$COMPONENT     &>> $LOGFILE
+npm install                         &>> $LOGFILE
+stat $?
