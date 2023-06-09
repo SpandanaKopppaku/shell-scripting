@@ -28,9 +28,10 @@ echo -n "Downloading the $COMPONENT component :"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/stans-robot-project/$COMPONENT/archive/main.zip"   &>> $LOGFILE
 cd /home/roboshop
 
-unzip /tmp/c$COMPONENT.zip
-mv $COMPONENT-main $COMPONENT
-cd /home/roboshop/$COMPONENT
+cd /home/roboshop
+unzip /tmp/catalogue.zip
+mv catalogue-main catalogue
+cd /home/roboshop/catalogue
 npm install
 
 
