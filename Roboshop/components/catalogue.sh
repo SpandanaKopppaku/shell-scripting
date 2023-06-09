@@ -1,7 +1,7 @@
 #!/bin/bash
 
 COMPONENT=catalogue
-APPUSER="roboshop"
+
 
 source components/common.sh
 
@@ -15,14 +15,7 @@ echo -n "Installing NodeJS :"
 yum install nodejs -y       &>> $LOGFILE
 stat $?
 
-id $APPUSER
-if [ $? -ne 0 ] ; then
 
-    echo -n "Creating the Service Account :"
-    useradd roboshop    &>> $LOGFILE
-    stat $?
-
-fi
 
 chown -R $APPUSER:$APPUSER /home/roboshop/$COMPONENT/
 
@@ -43,7 +36,7 @@ npm install                         &>> $LOGFILE
 stat $?
 
 echo -n "Updating the $COMPONENT systemd file :"
-sed -i -e 's/MONGO_DNSNAME/172.31.28.114/' /home/${APPUSER}/${COMPONENT}/systemd.service
+sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/${APPUSER}/${COMPONENT}/systemd.service
 mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service
 stat $?
 

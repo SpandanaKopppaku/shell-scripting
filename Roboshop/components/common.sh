@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+APPUSER="roboshop"
 LOGFILE="/tmp/${COMPONENT}.log"
 
 echo -e "*********** \e[35m $COMPONENT Installation has started \e[0m ***********"
@@ -21,3 +21,15 @@ stat() {
     fi 
 }
 
+
+CREATE_USER() {
+
+    id $APPUSER
+    if [ $? -ne 0 ] ; then
+
+        echo -n "Creating the Service Account :"
+        useradd roboshop    &>> $LOGFILE
+        stat $?
+
+    fi
+}
