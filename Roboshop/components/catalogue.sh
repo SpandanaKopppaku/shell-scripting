@@ -46,7 +46,7 @@ systemctl start $COMPONENT          &>> $LOGFILE
 systemctl status $COMPONENT -l
 stat $?
 
-
+echo -e "*********** \e[35m $COMPONENT Installation has Completed \e[0m ***********"
 
 
 
