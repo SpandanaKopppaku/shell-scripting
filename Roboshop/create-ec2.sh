@@ -11,3 +11,5 @@ echo -e "\e[36m **** Launching Server **** \e[0m"
 
 
 aws ec2 run-instances  --image-id ${AMI_ID}  --instance-type t3.micro
+
+aws ec2 run-instances --image-id ${AMI_ID} --instance-type t3.micro --security-group-ids ${SG_ID} --tag-specifications 'ResourceType=instance,Tags=[{Key=name,Value=production}]'
