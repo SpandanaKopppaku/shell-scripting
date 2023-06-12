@@ -1,11 +1,11 @@
 {
     "Comment": "CREATE/DELETE/UPSERT a record ",
     "Changes": [{
-    "Action": "CREATE",
+    "Action": "UPSERT",
                 "ResourceRecordSet": {
-                            "Name": "a.example.com",
+                            "Name": "$COMPONENT.roboshop.internal",
                             "Type": "A",
-                            "TTL": 300,
+                            "TTL": 10,
                          "ResourceRecords": [{ "Value": "4.4.4.4"}]
 }}]
 }
