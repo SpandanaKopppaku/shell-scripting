@@ -3,6 +3,7 @@
 # AMI_ID="ami-0c1d144c8fdd8d690"
 
 COMPONENET=$1
+ENV=$2
 
 AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=DevOps-LabImage-CentOS7" | jq '.Images[].ImageId'|sed -e 's/"//g')
 SG_ID=$(aws ec2 describe-security-groups --filters Name=group-name,Values=b54-allow-all | jq '.SecurityGroups[].GroupId' | sed -e 's/"//g')
