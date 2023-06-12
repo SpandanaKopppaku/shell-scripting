@@ -24,3 +24,4 @@ echo -e "\e[36m **** Launching $COMPONENT-$ENV Server is completed **** \e[0m"
 echo -e "Private IP Address of $COMPONENT-$ENV is \e[35m $IPADDRESS \e[0m"
 
 echo -e "\e[36m Creating the DNS record \e[0m"
+aws route53 change-resource-record-sets --hosted-zone-id Z0909398U99YUHS0RTOO --change-batch file://sample.json
